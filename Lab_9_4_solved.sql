@@ -32,7 +32,7 @@ SELECT
     f.title
 FROM film AS f
 JOIN film_category AS fc ON f.film_id = fc.film_id
-JOIN category AS cat ON fc.category_id = c.category_id
+JOIN category AS cat ON fc.category_id = cat.category_id
 WHERE cat.name = 'Family';
 
 -- 5. Retrieve the name and email of customers from Canada using both subqueries and joins. To use joins, you will need to identify the relevant tables and their primary and foreign keys.
